@@ -62,7 +62,7 @@ class Solution:
 
 ## Time Complexity Comparison
 
-Solution 1:
+**Solution 1:**
 
 This solution manually compares characters of the two strings by building two lists and then removing matching characters from one list based on the other.
 
@@ -71,7 +71,7 @@ This solution manually compares characters of the two strings by building two li
 
 * The nested loops where each character in slist is compared with each character in tlist result in O(n2)O(n2) operations in the worst case (where nn is the length of the strings).
 
-Solution 2:
+**Solution 2:**
 
 This solution counts the frequency of each character in both strings and then compares these frequency counts.
 
@@ -82,10 +82,10 @@ This solution counts the frequency of each character in both strings and then co
 
 ## Comparison
 
-  Solution 1 is simpler but less efficient with a time complexity of O(n2)O(n2). It manually handles character matching and removal.
+  * Solution 1 is simpler but less efficient with a time complexity of O(n2)O(n2). It manually handles character matching and removal.
 
 
-  Solution 2 is more efficient with a time complexity of O(n)O(n). It uses dictionaries to count character frequencies and then compares these counts.
+  * Solution 2 is more efficient with a time complexity of O(n)O(n). It uses dictionaries to count character frequencies and then compares these counts.
 
 ## Acknowledgements
 
