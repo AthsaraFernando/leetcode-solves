@@ -38,7 +38,7 @@ class Solution:
 
 ```
 
-## Solution 1 (2.py)
+## Solution 2 (2.py)
 
 ```bash
 class Solution:
