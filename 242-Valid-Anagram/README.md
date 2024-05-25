@@ -66,22 +66,26 @@ Solution 1:
 
 This solution manually compares characters of the two strings by building two lists and then removing matching characters from one list based on the other.
 
-    Time Complexity: O(n2)O(n2)
+  Time Complexity: O(n2)O(n2)
         The outer loops that build slist and tlist are O(n)O(n).
+
         The nested loops where each character in slist is compared with each character in tlist result in O(n2)O(n2) operations in the worst case (where nn is the length of the strings).
 
 Solution 2:
 
 This solution counts the frequency of each character in both strings and then compares these frequency counts.
 
-    Time Complexity: O(n)O(n)
+  Time Complexity: O(n)O(n)
+  
         The loops that count the characters in s and t are both O(n)O(n).
         Comparing the two dictionaries is O(n)O(n) in the average case.
 
 ## Comparison
 
-    Solution 1 is simpler but less efficient with a time complexity of O(n2)O(n2). It manually handles character matching and removal.
-    Solution 2 is more efficient with a time complexity of O(n)O(n). It uses dictionaries to count character frequencies and then compares these counts.
+  Solution 1 is simpler but less efficient with a time complexity of O(n2)O(n2). It manually handles character matching and removal.
+
+
+  Solution 2 is more efficient with a time complexity of O(n)O(n). It uses dictionaries to count character frequencies and then compares these counts.
 
 ## Acknowledgements
 
