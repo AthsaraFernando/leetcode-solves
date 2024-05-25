@@ -69,7 +69,7 @@ This solution manually compares characters of the two strings by building two li
   Time Complexity: O(n2)O(n2)
         The outer loops that build slist and tlist are O(n)O(n).
 
-        The nested loops where each character in slist is compared with each character in tlist result in O(n2)O(n2) operations in the worst case (where nn is the length of the strings).
+* The nested loops where each character in slist is compared with each character in tlist result in O(n2)O(n2) operations in the worst case (where nn is the length of the strings).
 
 Solution 2:
 
@@ -77,7 +77,7 @@ This solution counts the frequency of each character in both strings and then co
 
   Time Complexity: O(n)O(n)
   
-        The loops that count the characters in s and t are both O(n)O(n).
+  * The loops that count the characters in s and t are both O(n)O(n).
         Comparing the two dictionaries is O(n)O(n) in the average case.
 
 ## Comparison
