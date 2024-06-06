@@ -1,5 +1,5 @@
 
-# LeetCode 242. Valid Anagram
+# LeetCode 49. Group Anagram
 
 This repository contains two solutions for the LeetCode problem 49, "Group Anagram."
 
