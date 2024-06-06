@@ -1,31 +1,28 @@
+from typing import List
 
-def groupAnagrams():
-        strs = ["eat","tea","tan","ate","nat","bat"]
-        sorted_strs=[]
-        out1=[]
-        out2=[]
-        flag=[]
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        sorted_strs = []
+        out2 = []
+        flag = []
+
         for k in strs:
-            sorted_strs.append(sorted(k))
+            sorted_strs.append(''.join(sorted(k)))  # Sorting each word
 
         for i in range(len(sorted_strs)):
-            out1=[] 
             if sorted_strs[i] not in flag:
-                  
+                out1 = [strs[i]]  # Initialize with the original word
                 for j in range(len(sorted_strs)):
-                    if i!=j:
-                        
-                        if sorted_strs[i]== sorted_strs[j]:
-                            flag.append(sorted_strs[j])
-                            out1.append(strs[j])
+                    if i != j and sorted_strs[i] == sorted_strs[j]:
+                        flag.append(sorted_strs[j])
+                        out1.append(strs[j])
                 out2.append(out1)
-                
+                flag.append(sorted_strs[i])  # Add the current word's sorted version to the flag
 
-        print(out2)
-
-        print(sorted_strs)
-
-        
-      
-
-
+        return out2
+'''
+# Example usage
+solution = Solution()
+strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+print(solution.groupAnagrams(strs))
+'''
