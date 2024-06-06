@@ -10,7 +10,7 @@ Given an array of strings, you need to group the anagrams together. An anagram i
 
 
 
-## Solution 1 (1.py)
+## Solution 1 (1.py) [BruteForce_Solution]
 
 ```bash
 class Solution:
@@ -43,7 +43,7 @@ print(solution.groupAnagrams(strs))
 
 ```
 
-## Solution 2 (2.py)
+## Solution 2 (2.py) [Optimal_Solution]
 
 ```bash
 from collections import defaultdict
