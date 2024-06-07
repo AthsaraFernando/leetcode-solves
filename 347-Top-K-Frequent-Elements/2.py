@@ -7,6 +7,11 @@ class Solution:
         count = Counter(nums)
         
         # Step 2: Use a min-heap to keep track of the top k elements
-        # heapq.nlargest can directly give us the k largest elements based on their frequencies
-        return [item for item, frequency in heapq.nlargest(k, count.items(), key=lambda x: x[1])]
-
+        top_k = heapq.nlargest(k, count.items(), key=lambda x: x[1])
+        
+        # Step 3: Extract the items from the top k elements
+        result = []
+        for item, frequency in top_k:
+            result.append(item)
+        
+        return result
